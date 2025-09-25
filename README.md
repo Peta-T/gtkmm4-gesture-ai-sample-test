@@ -36,7 +36,7 @@ git clone https://github.com/Peta-T/gtkmm4-gesture-ai-sample-test
 cd gtkmm4-gesture-ai-sample-test
 
 # 6.) Build it - type on command line:
- g++ -std=c++20 main.cc `pkg-config --cflags --libs gtkmm-4.0 ` -o app -g
+  g++ -std=c++20 main.cc `pkg-config --cflags --libs gtkmm-4.0 ` -o app -g
 
 # 7.) Run app - type on command line:
 ./app
