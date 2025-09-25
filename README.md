@@ -10,12 +10,15 @@ Launch the Start Menu item “MSYS2 mingw 64 bit” you should be greeted with a
 
 # 3.) Install updates
 Type:
+::
 
 pacman -Syu
+
 if it tells you to close restart msys, close the console window and start it again. Then run pacman -Syu again.
 
 # 4.) Install dependencies
 Type/paste
+::
 
 pacman -S \
 mingw-w64-x86_64-gcc \
@@ -31,14 +34,19 @@ When prompted, just hit return. Sit back and wait for it to install what’s alm
 Before continuing you may change to another directory. It easiest to type cd followed by a space and drop the folder you want to change to on the window.
 
 # 5.) Clone gtkmm4-gesture-ai-sample-test by type/paste on commandline:
+::
 
 git clone https://github.com/Peta-T/gtkmm4-gesture-ai-sample-test
 cd gtkmm4-gesture-ai-sample-test
 
 # 6.) Build it - type on command line:
-  g++ -std=c++20 main.cc `pkg-config --cflags --libs gtkmm-4.0 ` -o app -g
+::
+
+  g++ -std=c++20 main.cc ``pkg-config --cflags --libs gtkmm-4.0 `` -o app -g
 
 # 7.) Run app - type on command line:
+::
+
 ./app
 
 
