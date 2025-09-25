@@ -24,15 +24,25 @@ if it tells you to close restart msys, close the console window and start it aga
 4.) Install dependencies
 ------------------------
 Type/paste
+
 ::
 
    pacman -S \
    mingw-w64-x86_64-gcc \
    mingw-w64-x86_64-pkgconf \
    mingw-w64-x86_64-gtkmm4 \
+   mingw-w64-x86_64-glm \
+   mingw-w64-x86_64-opencascade \
+   mingw-w64-x86_64-eigen3 \
+   mingw-w64-x86_64-meson \
+   mingw-w64-x86_64-cmake \
+   mingw-w64-x86_64-python \
+   mingw-w64-x86_64-python-cairo \
+   mingw-w64-x86_64-python-gobject \
    zip \
    unzip \
    git \
+   dos2unix \
    --needed
 
 When prompted, just hit return. Sit back and wait for it to install what’s almost a complete linux environment.
