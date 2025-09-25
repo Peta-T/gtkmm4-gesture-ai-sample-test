@@ -15,7 +15,6 @@ Launch the Start Menu item “MSYS2 mingw 64 bit” you should be greeted with a
 3.) Install updates
 -------------------
 Type:
-::
 
    pacman -Syu
 
@@ -25,24 +24,13 @@ if it tells you to close restart msys, close the console window and start it aga
 ------------------------
 Type/paste
 
-::
-
-   pacman -S \
-   mingw-w64-x86_64-gcc \
-   mingw-w64-x86_64-pkgconf \
-   mingw-w64-x86_64-gtkmm4 \
-   mingw-w64-x86_64-glm \
-   mingw-w64-x86_64-opencascade \
-   mingw-w64-x86_64-eigen3 \
-   mingw-w64-x86_64-meson \
-   mingw-w64-x86_64-cmake \
-   mingw-w64-x86_64-python \
-   mingw-w64-x86_64-python-cairo \
-   mingw-w64-x86_64-python-gobject \
-   zip \
-   unzip \
-   git \
-   dos2unix \
+   pacman -S \\ \
+   mingw-w64-x86_64-gcc \\ \
+   mingw-w64-x86_64-pkgconf \\ \
+   mingw-w64-x86_64-gtkmm4 \\ \
+   zip \\ \
+   unzip \\ \
+   git \\ \
    --needed
 
 When prompted, just hit return. Sit back and wait for it to install what’s almost a complete linux environment.
@@ -51,20 +39,17 @@ Before continuing you may change to another directory. It easiest to type cd fol
 
 5.) Clone gtkmm4-gesture-ai-sample-test by type/paste on commandline:
 ---------------------------------------------------------------------
-::
 
-   git clone https://github.com/Peta-T/gtkmm4-gesture-ai-sample-test
+   git clone https://github.com/Peta-T/gtkmm4-gesture-ai-sample-test \
    cd gtkmm4-gesture-ai-sample-test
 
 6.) Build it - type on command line:
 ------------------------------------
-::
 
-   g++ -std=c++20 main.cc ``pkg-config --cflags --libs gtkmm-4.0 `` -o app -g
+   g++ -std=c++20 main.cc \`pkg-config --cflags --libs gtkmm-4.0 \` -o app -g
 
 7.) Run app - type on command line:
 -----------------------------------
-::
 
    ./app
 
