@@ -1,4 +1,4 @@
-# gtkmm4-gesture-ai-sample-test
+# gtkmm4 Application catching mouse gesture and classifier with AI
 This small sample C++ code which try show possible using gtkmm4  mouse gesture recognition with AI this code is possible to build and run on Debian13 or on Windows in MSYS2 enviroment.
 
 ![Screenschot](Screenshot.png)
